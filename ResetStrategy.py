@@ -227,8 +227,8 @@ class ResetStrategy:
                 
             this_data['token_0_allocated']      = total_token_0
             this_data['token_1_allocated']      = total_token_1
-            this_data['token_0_total']          = total_token_0 + strategy_observation.token_0_left_over + strategy_observation.token_0_fees_accum
-            this_data['token_1_total']          = total_token_1 + strategy_observation.token_1_left_over + strategy_observation.token_1_fees_accum
+            this_data['token_0_total']          = total_token_0 + strategy_observation.token_0_left_over + strategy_observation.token_0_fees_uncollected
+            this_data['token_1_total']          = total_token_1 + strategy_observation.token_1_left_over + strategy_observation.token_1_fees_uncollected
 
             # Value Variables
             this_data['value_position']         = this_data['token_0_total'] + this_data['token_1_total']         / this_data['price']
