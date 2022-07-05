@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "active-strategy-framework"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+pandas = "^1.4.3"
+numpy = "^1.23.0"
+matplotlib = "^3.5.2"
+statsmodels = "^0.13.2"
+scipy = "^1.8.1"
+requests = "^2.28.1"
+arch = "^5.3.1"
+google-cloud-bigquery = "^3.2.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
